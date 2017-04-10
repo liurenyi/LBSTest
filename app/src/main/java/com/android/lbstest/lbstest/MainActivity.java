@@ -102,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    startDialog();
                     final StringBuilder sb = new StringBuilder();
                     sb.append("经度： ").append(bdLocation.getLatitude()).append("\n");
                     sb.append("维度： ").append(bdLocation.getLongitude()).append("\n");
@@ -144,12 +143,4 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-    public void startDialog() {
-        dialog.setTitle("青少等");
-        dialog.setIcon(R.mipmap.ic_launcher);
-        dialog.setMessage("正在加载，请稍等");
-        dialog.show();
-    }
-
 }
