@@ -122,8 +122,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
-
-
         }
 
         @Override
@@ -140,7 +138,9 @@ public class MainActivity extends AppCompatActivity {
                 positionText.setText(result);
             }
         });
+    }
 
-
+    public void test() {
+        
     }
 }
